@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import os
+# Display DelivaHire Logo
+st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/delivahire_logo.png", width=180)
+st.markdown("<h1 style='margin-top: -20px;'>DelivaHire</h1>", unsafe_allow_html=True)
+st.caption("Where Talent Meets the Road")
 
 st.set_page_config(page_title="DelivaHire", page_icon="🚚", layout="wide")
 
@@ -33,17 +37,17 @@ elif menu == "Partner Network":
     col1, col2 = st.columns(2)
 
     with col1:
-        st.image("https://upload.wikimedia.org/wikipedia/commons/1/12/Swiggy_logo.svg", width=120)
+        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/swiggy.png", width=130)
         st.caption("Swiggy ✅")
 
-        st.image("https://upload.wikimedia.org/wikipedia/commons/b/b9/Zomato_logo.png", width=120)
+        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/zomato.png", width=130)
         st.caption("Zomato ✅")
 
     with col2:
-        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/blinkit.png", width=120)
+        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/blinkit.png", width=130)
         st.caption("Blinkit ✅")
 
-        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/bigbasket.png", width=120)
+        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/bigbasket.png", width=130)
         st.caption("BigBasket ✅")
 
 # ---------------- APPLY NOW ----------------
