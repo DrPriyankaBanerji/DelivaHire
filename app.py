@@ -8,7 +8,7 @@ st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/De
 st.markdown("<h1 style='margin-top: -20px;'>DelivaHire</h1>", unsafe_allow_html=True)
 st.caption("Where Talent Meets the Road")
 
-# TABS
+# TABS (Apply Now moved up before Contact Us)
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Apply Now", "About Us", "Partner Network", "Contact Us"])
 
 # HOME
@@ -29,14 +29,24 @@ with tab2:
     if st.button("Apply via Google Form"):
         st.markdown("[**Click here to Apply Now**](https://docs.google.com/forms/d/e/1FAIpQLSdd2QvWzjihByIP3onJk1J5z3Srlz6XA05Iye5bVAfZa_B78A/viewform?usp=sharing)", unsafe_allow_html=True)
 
-# ABOUT US
+# ABOUT US (restored version)
 with tab3:
     st.subheader("About DelivaHire")
+
     st.write("""
-        DelivaHire is a dedicated staffing solution focused on connecting hardworking individuals with high-demand delivery platforms in India. 
-        We understand the dynamic nature of gig-based logistics and aim to be the trusted bridge between talent and opportunity.
-        
-        From onboarding to deployment, we support our delivery agents every step of the way. Whether it’s groceries, food, or e-commerce packages—our partners trust us to provide reliable manpower, on time.
+    **DelivaHire** is a dynamic and purpose-driven staffing agency committed to bridging the gap between skilled delivery agents and India’s fastest-growing delivery platforms. We are not just recruiters—we are enablers of opportunity, focused on unlocking livelihoods and ensuring seamless last-mile delivery services.
+
+    Our mission is to empower individuals by offering them reliable and dignified employment while helping companies scale efficiently with trusted manpower.
+
+    ### 🌟 What We Do:
+    - Recruit and onboard delivery professionals for e-commerce, grocery, and logistics companies.
+    - Train and prepare candidates for real-world field expectations.
+    - Maintain a transparent and efficient hiring process that works for both the agent and the company.
+
+    ### 🧭 Our Vision:
+    To be India’s most dependable staffing partner in the delivery ecosystem, known for ethical hiring practices, operational excellence, and a commitment to social upliftment.
+
+    Whether you're a job seeker or a delivery platform looking to expand, **DelivaHire** is here to drive your journey forward.
     """)
 
 # PARTNER NETWORK
