@@ -8,7 +8,7 @@ st.set_page_config(page_title="DelivaHire", page_icon="🚛", layout="wide")
 
 # 2. LOAD GOOGLE SHEETS CONNECTION
 scope = ["https://www.googleapis.com/auth/spreadsheets"]
-creds = Credentials.from_service_account_file("delivahire-credentials.json", scopes=scope)
+creds = Credentials.from_service_account_file("dhcreds.json", scopes=scope)
 client = gspread.authorize(creds)
 sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1fbI5EEOYmd2hTK4y7u-tMCCYQf-fTDg7dO-h4diTRxM/edit")
 worksheet = sheet.sheet1
