@@ -27,19 +27,17 @@ with tab1:
     st.write("Connecting reliable delivery agents with the fastest growing platforms in India.")
 
 # 6. APPLY NOW TAB
-with tab2:
+elif menu == "Apply Now":
     st.subheader("📋 Apply as a Delivery Agent")
-    name = st.text_input("Full Name")
-    phone = st.text_input("Phone Number")
-    area = st.text_input("Preferred Delivery Area")
-    experience = st.selectbox("Do you have previous delivery experience?", ["Yes", "No"])
+    st.write("We’ve made it super easy to apply for delivery jobs with DelivaHire!")
 
-    if st.button("Submit"):
-        if name and phone and area:
-            worksheet.append_row([name, phone, area, experience])
-            st.success(f"Thank you, {name}! Your application has been submitted.")
-        else:
-            st.warning("⚠️ Please fill in all required fields.")
+    st.markdown("""
+    Please click the button below to fill out our official application form.  
+    Your information will be recorded securely, and our team will contact you shortly.
+    """)
+
+    if st.button("Apply via Google Form"):
+        st.markdown("[**Click here to Apply Now**](https://docs.google.com/forms/d/e/1FAIpQLSdd2QvWzjihByIP3onJk1J5z3Srlz6XA05Iye5bVAfZa_B78A/viewform?usp=sharing)", unsafe_allow_html=True)
 
 # 7. ABOUT US TAB
 with tab3:
