@@ -31,16 +31,19 @@ elif menu == "Partner Network":
     st.write("We are proud to collaborate with the following delivery platforms:")
 
     col1, col2 = st.columns(2)
+
     with col1:
-        st.image("https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/2560px-Swiggy_logo.svg.png", width=120)
+        st.image("https://upload.wikimedia.org/wikipedia/commons/1/12/Swiggy_logo.svg", width=120)
         st.caption("Swiggy ✅")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Zomato_logo.png/440px-Zomato_logo.png", width=120)
+
+        st.image("https://upload.wikimedia.org/wikipedia/commons/b/b9/Zomato_logo.png", width=120)
         st.caption("Zomato ✅")
-    
+
     with col2:
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Blinkit_logo.svg/2560px-Blinkit_logo.svg.png", width=120)
+        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/blinkit.png", width=120)
         st.caption("Blinkit ✅")
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Bigbasket_logo.png/440px-Bigbasket_logo.png", width=120)
+
+        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/bigbasket.png", width=120)
         st.caption("BigBasket ✅")
 
 # ---------------- APPLY NOW ----------------
