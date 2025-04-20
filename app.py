@@ -8,29 +8,16 @@ st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/De
 st.markdown("<h1 style='margin-top: -20px;'>DelivaHire</h1>", unsafe_allow_html=True)
 st.caption("Where Talent Meets the Road")
 
-# TABS (Apply Now moved up before Contact Us)
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Apply Now", "About Us", "Partner Network", "Contact Us"])
+# TABS (Apply Now moved after Partner Network)
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "About Us", "Partner Network", "Apply Now", "Contact Us"])
 
 # HOME
 with tab1:
     st.subheader("Welcome to DelivaHire")
     st.write("Connecting reliable delivery agents with the fastest growing platforms in India.")
 
-# APPLY NOW (Google Form)
+# ABOUT US
 with tab2:
-    st.subheader("📋 Apply as a Delivery Agent")
-    st.write("We’ve made it super easy to apply for delivery jobs with DelivaHire!")
-
-    st.markdown("""
-    Please click the button below to fill out our official application form.  
-    Your information will be recorded securely, and our team will contact you shortly.
-    """)
-
-    if st.button("Apply via Google Form"):
-        st.markdown("[**Click here to Apply Now**](https://docs.google.com/forms/d/e/1FAIpQLSdd2QvWzjihByIP3onJk1J5z3Srlz6XA05Iye5bVAfZa_B78A/viewform?usp=sharing)", unsafe_allow_html=True)
-
-# ABOUT US (restored version)
-with tab3:
     st.subheader("About DelivaHire")
 
     st.write("""
@@ -50,7 +37,7 @@ with tab3:
     """)
 
 # PARTNER NETWORK
-with tab4:
+with tab3:
     st.header("🤝 Our Channel Partners")
     st.write("We are proud to collaborate with the following delivery platforms:")
 
@@ -69,6 +56,19 @@ with tab4:
 
         st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Big%20basket.png", width=130)
         st.caption("BigBasket ✅")
+
+# APPLY NOW (Google Form)
+with tab4:
+    st.subheader("📋 Apply as a Delivery Agent")
+    st.write("We’ve made it super easy to apply for delivery jobs with DelivaHire!")
+
+    st.markdown("""
+    Please click the button below to fill out our official application form.  
+    Your information will be recorded securely, and our team will contact you shortly.
+    """)
+
+    if st.button("Apply via Google Form"):
+        st.markdown("[**Click here to Apply Now**](https://docs.google.com/forms/d/e/1FAIpQLSdd2QvWzjihByIP3onJk1J5z3Srlz6XA05Iye5bVAfZa_B78A/viewform?usp=sharing)", unsafe_allow_html=True)
 
 # CONTACT US
 with tab5:
