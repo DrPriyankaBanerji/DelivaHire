@@ -2,24 +2,24 @@ import streamlit as st
 import pandas as pd
 import os
 
-# Set page config (MUST be first Streamlit command)
+# Set page config (MUST be first)
 st.set_page_config(page_title="DelivaHire", page_icon="🚛", layout="wide")
 
-# Header with Logo
+# Display logo and title
 st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Delivahire%20logo.png", width=180)
 st.markdown("<h1 style='margin-top: -20px;'>DelivaHire</h1>", unsafe_allow_html=True)
 st.caption("Where Talent Meets the Road")
 
-# Sidebar Menu
-menu = st.sidebar.selectbox("Menu", ["Home", "Apply Now", "About Us", "Partner Network", "Contact Us"])
+# Top tabs
+tabs = st.tabs(["Home", "Apply Now", "About Us", "Partner Network", "Contact Us"])
 
-# Home
-if menu == "Home":
+# --- Home ---
+with tabs[0]:
     st.subheader("Welcome to DelivaHire")
     st.write("Connecting reliable delivery agents with the fastest growing platforms in India.")
 
-# Apply Now
-elif menu == "Apply Now":
+# --- Apply Now ---
+with tabs[1]:
     st.subheader("📋 Apply as a Delivery Agent")
 
     name = st.text_input("Full Name")
@@ -49,13 +49,13 @@ elif menu == "Apply Now":
         else:
             st.warning("⚠️ Please fill in all required fields.")
 
-# About Us
-elif menu == "About Us":
+# --- About Us ---
+with tabs[2]:
     st.subheader("About DelivaHire")
     st.write("We are a growing staffing agency specializing in recruiting delivery agents for India’s top logistics and grocery platforms.")
 
-# Partner Network
-elif menu == "Partner Network":
+# --- Partner Network ---
+with tabs[3]:
     st.header("🤝 Our Channel Partners")
     st.write("We are proud to collaborate with the following delivery platforms:")
 
@@ -75,8 +75,8 @@ elif menu == "Partner Network":
         st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Big%20basket.png", width=130)
         st.caption("BigBasket ✅")
 
-# Contact Us
-elif menu == "Contact Us":
+# --- Contact Us ---
+with tabs[4]:
     st.subheader("📞 Contact Us")
     st.write("Have questions? Reach out at:")
     st.markdown("**Email:** contact@delivahire.in")
