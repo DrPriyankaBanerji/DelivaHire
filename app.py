@@ -1,33 +1,23 @@
 import streamlit as st
-import pandas as pd
-import gspread
-from google.oauth2.service_account import Credentials
 
-# 1. CONFIGURE PAGE (this must be the FIRST Streamlit command)
+# PAGE CONFIGURATION
 st.set_page_config(page_title="DelivaHire", page_icon="🚛", layout="wide")
 
-# 2. LOAD GOOGLE SHEETS CONNECTION
-scope = ["https://www.googleapis.com/auth/spreadsheets"]
-creds = Credentials.from_service_account_file("dhcreds.json", scopes=scope)
-client = gspread.authorize(creds)
-sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1fbI5EEOYmd2hTK4y7u-tMCCYQf-fTDg7dO-h4diTRxM/edit")
-worksheet = sheet.sheet1
-
-# 3. PAGE HEADER
+# HEADER
 st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Delivahire%20logo.png", width=180)
 st.markdown("<h1 style='margin-top: -20px;'>DelivaHire</h1>", unsafe_allow_html=True)
 st.caption("Where Talent Meets the Road")
 
-# 4. TABS FOR NAVIGATION
+# TABS
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Home", "Apply Now", "About Us", "Partner Network", "Contact Us"])
 
-# 5. HOME TAB
+# HOME
 with tab1:
     st.subheader("Welcome to DelivaHire")
     st.write("Connecting reliable delivery agents with the fastest growing platforms in India.")
 
-# 6. APPLY NOW TAB
-elif menu == "Apply Now":
+# APPLY NOW (Google Form)
+with tab2:
     st.subheader("📋 Apply as a Delivery Agent")
     st.write("We’ve made it super easy to apply for delivery jobs with DelivaHire!")
 
@@ -39,7 +29,7 @@ elif menu == "Apply Now":
     if st.button("Apply via Google Form"):
         st.markdown("[**Click here to Apply Now**](https://docs.google.com/forms/d/e/1FAIpQLSdd2QvWzjihByIP3onJk1J5z3Srlz6XA05Iye5bVAfZa_B78A/viewform?usp=sharing)", unsafe_allow_html=True)
 
-# 7. ABOUT US TAB
+# ABOUT US
 with tab3:
     st.subheader("About DelivaHire")
     st.write("""
@@ -49,7 +39,7 @@ with tab3:
         From onboarding to deployment, we support our delivery agents every step of the way. Whether it’s groceries, food, or e-commerce packages—our partners trust us to provide reliable manpower, on time.
     """)
 
-# 8. PARTNER NETWORK TAB
+# PARTNER NETWORK
 with tab4:
     st.header("🤝 Our Channel Partners")
     st.write("We are proud to collaborate with the following delivery platforms:")
@@ -70,7 +60,7 @@ with tab4:
         st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Big%20basket.png", width=130)
         st.caption("BigBasket ✅")
 
-# 9. CONTACT US TAB
+# CONTACT US
 with tab5:
     st.subheader("📞 Contact Us")
     st.write("Have questions? Reach out at:")
