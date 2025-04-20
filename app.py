@@ -52,7 +52,22 @@ with tabs[1]:
 # --- About Us ---
 with tabs[2]:
     st.subheader("About DelivaHire")
-    st.write("We are a growing staffing agency specializing in recruiting delivery agents for India’s top logistics and grocery platforms.")
+    
+    st.write("""
+    **DelivaHire** is a dynamic and purpose-driven staffing agency committed to bridging the gap between skilled delivery agents and India’s fastest-growing delivery platforms. We are not just recruiters—we are enablers of opportunity, focused on unlocking livelihoods and ensuring seamless last-mile delivery services.
+
+    Our mission is to empower individuals by offering them reliable and dignified employment while helping companies scale efficiently with trusted manpower.
+
+    ### 🌟 What We Do:
+    - Recruit and onboard delivery professionals for e-commerce, grocery, and logistics companies.
+    - Train and prepare candidates for real-world field expectations.
+    - Maintain a transparent and efficient hiring process that works for both the agent and the company.
+
+    ### 🧭 Our Vision:
+    To be India’s most dependable staffing partner in the delivery ecosystem, known for ethical hiring practices, operational excellence, and a commitment to social upliftment.
+
+    Whether you're a job seeker or a delivery platform looking to expand, **DelivaHire** is here to drive your journey forward.
+    """)
 
 # --- Partner Network ---
 with tabs[3]:
