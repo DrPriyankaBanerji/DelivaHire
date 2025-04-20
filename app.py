@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="DelivaHire", page_icon="🚛", layout="wide")
 
 # Show Logo & Title
-st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/delivahire_logo.png", width=180)
+st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Delivahire%20logo.png", width=180)
 st.markdown("<h1 style='margin-top: -20px;'>DelivaHire</h1>", unsafe_allow_html=True)
 st.caption("Where Talent Meets the Road")
 
@@ -38,19 +38,19 @@ elif menu == "Partner Network":
 
     col1, col2 = st.columns(2)
 
-    with col1:
-        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/swiggy.png", width=130)
-        st.caption("Swiggy ✅")
+with col1:
+    st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Swiggy.png", width=130)
+    st.caption("Swiggy ✅")
 
-        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/zomato.png", width=130)
-        st.caption("Zomato ✅")
+    st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Zomato.png", width=130)
+    st.caption("Zomato ✅")
 
-    with col2:
-        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/blinkit.png", width=130)
-        st.caption("Blinkit ✅")
+with col2:
+    st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Blinkit.png", width=130)
+    st.caption("Blinkit ✅")
 
-        st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/bigbasket.png", width=130)
-        st.caption("BigBasket ✅")
+    st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/Big%20basket.png", width=130)
+    st.caption("BigBasket ✅")
 
 # ---------------- APPLY NOW ----------------
 elif menu == "Apply Now":
