@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 import os
-# Display DelivaHire Logo
+
+# ✅ THIS MUST BE FIRST Streamlit command
+st.set_page_config(page_title="DelivaHire", page_icon="🚛", layout="wide")
+
+# Show Logo & Title
 st.image("https://raw.githubusercontent.com/drpriyankabanerji/delivahire/main/delivahire_logo.png", width=180)
 st.markdown("<h1 style='margin-top: -20px;'>DelivaHire</h1>", unsafe_allow_html=True)
 st.caption("Where Talent Meets the Road")
-
-st.set_page_config(page_title="DelivaHire", page_icon="🚚", layout="wide")
 
 # Sidebar Navigation
 st.sidebar.title("DelivaHire")
